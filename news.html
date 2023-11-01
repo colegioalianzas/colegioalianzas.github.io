@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Noticias y Eventos</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="column">
+            <img src="img/eventos universitarios.jpeg" alt="Evento Universitario">
+            <h2>Evento Universitario</h2>
+            <div class="column-content">
+                <p>Información sobre el evento universitario.</p>
+                <p>Fecha: DD/MM/AAAA</p>
+            </div>
+        </div>
+        <div class="column">
+            <img src="img/noticias.jpeg" alt="Noticias">
+            <h2>Noticias</h2>
+            <div class="column-content">
+                <p>Últimas noticias relevantes.</p>
+                <p>Fecha: DD/MM/AAAA</p>
+            </div>
+        </div>
+        <div class="column">
+            <img src="img/conferencias.jpeg" alt="Conferencia">
+            <h2>Conferencias</h2>
+            <div class="column-content">
+                <p>Información sobre conferencias próximas.</p>
+                <p>Fecha: DD/MM/AAAA</p>
+            </div>
+        </div>
+        <div class="column">
+            <img src="img/seminarios.jpeg" alt="Seminario">
+            <h2>Seminarios</h2>
+            <div class="column-content">
+                <p>Detalles sobre los seminarios programados.</p>
+                <p>Fecha: DD/MM/AAAA</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const columns = document.querySelectorAll('.column');
+
+        columns.forEach(column => {
+            column.addEventListener('click', () => {
+                columns.forEach(c => c.classList.remove('active'));
+                column.classList.add('active');
+            });
+
+            column.addEventListener('mouseout', () => {
+                column.classList.remove('active');
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

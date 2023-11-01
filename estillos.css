@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body{
+    background-image: url(/img/fondo4.png);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+}
+
+nav{
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 20px;
+    margin-top: 50px;
+}
+.dropdown{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.dropdown > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.dropdown > li:hover{
+    background-color: red;
+}
+.vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.dropdown li:hover .vertical{
+    display: block;
+}
+
+.vertical li:hover{
+    background-color: black;
+}
+.vertical li a{
+    display: block;
+    color: black;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
